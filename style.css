@@ -5,23 +5,32 @@ html { box-sizing: border-box; }
 
 body {
     text-rendering: optimizeLegibility;
+
+    /* design */
+    background-color: #f5f5f5;
+    padding-top: 150px; /* ODEBRAT - POUZE PRO ÚČELY VÝVOJE */
+
+    /* písmo */
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 /*
  BARVY
- svetle sede pozadi      #f5f5f5
- tmavsi seda             #959595
- barevny prechod nahore  #06d7c1
- barevny prechod dole    #50cc49
- zelena cara             #06d7c1
- oranzova                #f15f42
+ svetle sede pozadi      #f5f5f5    done
+ tmavsi seda             #959595    done
+ barevny prechod nahore  #06d7c1    done
+ barevny prechod dole    #50cc49    done
+ zelena cara             #06d7c1    done
+ oranzova                #f15f42    done
 
  PISMO
  Rubik - pouzite rezy pisma regular 400 a medium 500
  https://fonts.google.com/specimen/Rubik
 
  KULATE ROHY
- border-radius: 30px;
+ border-radius: 30px;   done
 */
 
 /* ----- zde zacni psat vlastni css ----- */
