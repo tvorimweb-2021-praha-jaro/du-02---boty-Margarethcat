@@ -32,8 +32,6 @@
 
             </div><!-- konec .vizual -->
 
-
-
             <div class="detaily">
 
                 <h1 class="nazev">Nike Air Zoom Pegasus 33</h1>
@@ -44,13 +42,29 @@
                     Nike Air Zoom Pegasus 33 dokonale padne, dodá pocit rychlosti a má pružné tlumení, které ti umožní zrychlit tempo a soustředit se na rychlost.
                 </p>
 
+                <!-- FIXME: Nebylo by lepší zde použít HTML tag <hr>? -->
+
                 <h2 class="parametr">Velikost</h2>
 
                 <ul class="velikosti">
                     <li>35</li>
                     <li>36</li>
                     <li>37</li>
-                    <li class="vybrana">38</li>
+                    <li class="vybrana">
+                        <!--
+                            FIXME:
+                                Není zde třeba přidat span na text?
+                                -
+                                Napadlo mě tomu dát ještě margin auto,
+                                aby šírka elementu byla závislá na textu,
+                                kdy bych pak text nafoukla o padding
+                                a pak by tam border vycházel.
+                                -
+                                Takto se snaží border obsáhnout celý
+                                li element, který je moc široký.
+                        -->
+                        <span>38</span>
+                    </li>
                     <li>39</li>
                     <li>40</li>
                 </ul>

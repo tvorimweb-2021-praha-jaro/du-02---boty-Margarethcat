@@ -1,7 +1,14 @@
-/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
+/* import fontu */
+@import url(https://fonts.googleapis.com/css?family=Rubik);
 
-*, ::after, ::before { box-sizing: inherit; }
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
 
 body {
     text-rendering: optimizeLegibility;
@@ -34,3 +41,127 @@ body {
 */
 
 /* ----- zde zacni psat vlastni css ----- */
+
+
+.zbozi {
+    display: flex; /* Způsob zobrazení rodiče */
+    flex-direction: row; /* Způsob zobrazení dětí */
+
+    margin: auto auto; /* Zarovnání doprostřed */
+
+    /* nastavení dimenzí */
+    width: 670px;
+    height: 440px;
+
+    /* Vzhledové úpravy */
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 10px 10px 30px -10px #959595;
+}
+
+.vizual,
+.detaily {
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+}
+
+.vizual {
+    background-image: linear-gradient(#06d7c1, #50cc49);
+    border-radius: 30px 0 0 30px;
+    position: relative;
+}
+
+.logo {
+    padding-bottom: 30px;
+}
+
+.slogan {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.slogan,
+.cenovka {
+    color: white;
+}
+
+.bota,
+.cenovka {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.cenovka {
+    margin: 0 30px 30px 0;
+    text-align: right;
+}
+
+.cena {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.zaruka {
+    font-size: 12px;
+}
+
+.nazev {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.produkt {
+    color: #959595;
+}
+
+.popis {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #06d7c1;
+    margin-bottom: 30px;
+}
+
+.parametr {
+    text-transform: uppercase;
+}
+
+.velikosti {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+}
+.velikosti li {
+    text-align: center;
+    flex-grow: 1;
+}
+.vybrana span {
+    border: 1px solid #f15f42;
+    color: #f15f42;
+    border-radius: 100%;
+    padding: 3px;
+}
+
+.detaily {
+    position: relative;
+}
+
+.akce {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    background-color: #f15f42;
+    border-radius: 30px;
+    padding: 10px 30px;
+}
+
+.tlacitko {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
